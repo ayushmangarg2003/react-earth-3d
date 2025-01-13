@@ -1,6 +1,6 @@
 {
   "name": "react-earth-3d",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customizable 3D Earth globe visualization component for React",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
