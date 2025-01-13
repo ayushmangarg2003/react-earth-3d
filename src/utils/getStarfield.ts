@@ -27,7 +27,7 @@ const defaultOptions: StarfieldOptions = {
         hue: 0.6,
         saturation: 0.2,
     },
-    starTexturePath: '/textures/stars/circle.png',
+    starTexturePath: '../assets/textures/stars/circle.png',
 };
 
 export function getStarfield(options: StarfieldOptions = {}): THREE.Points {

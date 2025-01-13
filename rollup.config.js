@@ -2,7 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import copyPlugin from "rollup-plugin-copy"; // Add this import
+import copyPlugin from "rollup-plugin-copy";
 
 export default {
   input: "src/index.ts",
@@ -27,7 +27,6 @@ export default {
       clean: true,
     }),
     copyPlugin({
-      // Use copyPlugin instead of copy
       targets: [{ src: "src/assets/*", dest: "dist/assets" }],
     }),
   ],

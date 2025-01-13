@@ -4,7 +4,6 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { EarthVisualizationProps } from './types';
 import { getStarfield } from './utils/getStarfield';
 import { getFresnelMat } from './utils/getFresnelMat';
-// import { getFresnelMat } from './assets/textures';
 
 const defaultProps: Required<EarthVisualizationProps> = {
     width: '100%',
