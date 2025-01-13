@@ -4,18 +4,19 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { EarthVisualizationProps } from './types';
 import { getStarfield } from './utils/getStarfield';
 import { getFresnelMat } from './utils/getFresnelMat';
+// import { getFresnelMat } from './assets/textures';
 
 const defaultProps: Required<EarthVisualizationProps> = {
     width: '100%',
     height: '100%',
     rotationSpeed: 0.002,
     numStars: 2000,
-    earthTexturePath: '/textures/00_earthmap1k.jpg',
-    specularMapPath: '/textures/02_earthspec1k.jpg',
-    bumpMapPath: '/textures/01_earthbump1k.jpg',
-    cloudsTexturePath: '/textures/04_earthcloudmap.jpg',
-    cloudsAlphaMapPath: '/textures/05_earthcloudmaptrans.jpg',
-    lightsTexturePath: '/textures/03_earthlights1k.jpg',
+    earthTexturePath: './assets/textures/00_earthmap1k.jpg',
+    specularMapPath: './assets/textures/02_earthspec1k.jpg',
+    bumpMapPath: './assets/textures/01_earthbump1k.jpg',
+    cloudsTexturePath: './assets/textures/04_earthcloudmap.jpg',
+    cloudsAlphaMapPath: './assets/textures/05_earthcloudmaptrans.jpg',
+    lightsTexturePath: './assets/textures/03_earthlights1k.jpg',
 };
 
 export const EarthVisualization: React.FC<EarthVisualizationProps> = (props) => {
